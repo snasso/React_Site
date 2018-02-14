@@ -4,7 +4,7 @@
 }
 
 
-/* Images Block */
+/* Articles Block */
 .article img {
 	float: left;
 	max-width: 50%;
@@ -14,9 +14,16 @@
 
 .article {
 	padding: 1px;
-	height: 248px;
-	overflow: hidden;
 	margin-bottom: 10px;
+}
+
+.article p {
+	font-size: 12px;
+}
+
+.article p span {
+	display: block;
+	font-size: 18px;
 }
 
 
