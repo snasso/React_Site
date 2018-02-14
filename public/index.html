@@ -18,13 +18,22 @@
       Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+	-->
+	
+	<!--Import Google Icon Font-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!--Import materialize.css-->
+	<link type="text/css" rel="stylesheet" href="materialize.min.css" media="screen,projection"/>
+	
+	<!--core first + styles last-->
+	<link href="fontawesome-all.min.css" rel="stylesheet">
+
+    <title>React Site</title>
   </head>
   <body>
     <noscript>
       You need to enable JavaScript to run this app.
-    </noscript>
+	</noscript>
     <div id="root"></div>
     <!--
       This HTML file is a template.
@@ -35,6 +44,22 @@
 
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+	-->
+	
+	<!-- Import jQuery before materialize.js -->
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="materialize.min.js"></script>
+	<script type="text/javascript">
+		
+		setTimeout(() => {
+
+			let modalElem 			= document.querySelector('.modal');
+			let modalInstance 		= M.Modal.init(modalElem);
+
+			let sidenavElem 		= document.querySelector(".sidenav");
+			let sidenavInstance 	= M.Sidenav.init(sidenavElem);
+		}, 500)
+		
+	</script>
   </body>
 </html>
